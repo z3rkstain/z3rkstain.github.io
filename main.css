@@ -29,3 +29,8 @@ top: 100%;
 background-color: black;
 height: 85px;
 }
+
+.footer-text{
+	margin-top: 20px;
+	color: white;
+}
