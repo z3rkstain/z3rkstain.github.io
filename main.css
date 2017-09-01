@@ -9,12 +9,27 @@ ul.nav a:hover{
   vertical-align: middle;
 }
 
+.active-link{
+	text-decoration: underline;
+}
+
 .navbar{
   background-color: white;
   border: none;
   margin-bottom: 100px;
+  position: relative;
 }
-
+.navbar-nav{
+	  font-size: 22px;
+  white-space: nowrap;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+  text-align: right;
+  position: relative;
+  padding-left: 10px;
+}
 .carousel .item {
     width: 100%; /*slider width*/
     max-height: 700px; /*slider height*/
