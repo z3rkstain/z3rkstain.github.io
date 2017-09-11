@@ -37,7 +37,7 @@
                 <center>
                 <ul class="nav navbar-nav">  
 				  <li><a class="nav-link" href="/"><strong>Home</strong></a></li>
-                  <li><a class="nav-link active-link" href="Programming_1-2/assignments.html"><strong>Programming 1-2 Classworks</strong></a></li>
+                  <li><a class="nav-link active-link" href="assignments.html"><strong>Programming 1-2 Classworks</strong></a></li>
                   <li><a class="nav-link" href="about"><strong>APCS Classworks</strong></a></li>
                 </ul>
 				</center>
@@ -51,8 +51,38 @@
 <div class="container">
  <div class="row">
   <div class="col-md-4">
-  <label for="first-name-input" id="first-name-label" class="col-3 col-form-label">Minimum Number</label>
+  <label for="miv-value-input" id="min-num-label" class="col-3 col-form-label">Minimum Number</label>
    <input class="form-control" type="number" placeholder="Please enter a starting value (0-10k)"min="0" max="10000" id="min-value-input">
+   </div>
+   
+  <div class="col-md-4">
+  <label for="max-value-input" id="max-num-label" class="col-3 col-form-label">Maximum Number</label>
+   <input class="form-control" type="number" placeholder="Please enter an ending value (max 1 million)" max="1000000" id="max-value-input">
+   </div>
+   
+   <div class="col-md-4">
+  <label for="guess-value-input" id="guess-amt-label" class="col-3 col-form-label">Amount of Guesses</label>
+   <input class="form-control" type="number" placeholder="Please enter amount of guesses (1-20)"min="1" max="20" id="guess-value-input">
+   </div>
+   </div>
+   <div class="row" style="margin-top:50px;">
+    <div class="col-md-2">
+     <button type="button" class="btn btn-primary" id="start-game-button" style="margin-top:15px;height:45px;width:120px;font-size:16px;">Start Game</button>
+	</div>
+	<div class="col-md-4">
+	 <label for="guess-input" id="guess-label" class="col-3 col-form-label" >Enter your guess here</label>
+	 <input class="form-control" type="number" id="guess-input" disabled="disabled">
+	 </div>
+	 <div class="col-md-2">
+     <button type="button" id="check-guess-button" class="btn btn-primary" style="margin-top:15px;height:45px;width:120px;font-size:16px;" disabled="disabled">Check Guess</button>
+	</div>
+	<div class="col-md-4">
+	 <div class="alert alert-info" style="margin-top:15px"role="alert">
+	<strong> Your guess will be compared here </strong>
+	</div>
+   </div>
+   </>
+   </div>
    
   <!--  Footer Start -->
   <footer>
