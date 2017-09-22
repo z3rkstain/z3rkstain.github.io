@@ -68,17 +68,17 @@
    </div>
    <div class="row" style="margin-top:50px;">
     <div class="col-md-2">
-     <button type="button" class="btn btn-primary" id="start-game-button" style="margin-top:15px;height:45px;width:120px;font-size:16px;" onclick="getValues()">Start Game</button>
+     <button type="button" class="btn btn-primary" id="start-game-button" style="margin-top:15px;height:45px;width:120px;font-size:16px;" onclick="getValues() ">Start Game</button>
 	</div>
 	<div class="col-md-4">
 	 <label for="guess-input" id="guess-label" class="col-3 col-form-label" >Enter your guess here</label>
 	 <input class="form-control" type="number" id="guess-input" disabled="disabled">
 	 </div>
 	 <div class="col-md-2">
-     <button type="button" id="check-guess-button" class="btn btn-primary" style="margin-top:15px;height:45px;width:120px;font-size:16px;" disabled="disabled">Check Guess</button>
+     <button type="button" id="check-guess-button" class="btn btn-primary" style="margin-top:15px;height:45px;width:120px;font-size:16px;" disabled="disabled" onclick="checkGuess() ">Check Guess</button>
 	</div>
 	<div class="col-md-4">
-	 <div class="alert alert-info" style="margin-top:15px"role="alert">
+	 <div class="alert alert-info" id="guessDisplay" style="margin-top:15px"role="alert">
 	<strong> Your guess will be compared here </strong>
 	</div>
    </div>
