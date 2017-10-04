@@ -12,7 +12,7 @@
   
   <!-- Importing my own CSS and JS Files -->
 	<link rel="stylesheet" href="../main.css">
-	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="sorting_js.js"></script>
 </head>
 
 <body>
@@ -47,15 +47,22 @@
 <div class="container">
 <div class="row">
  <div class="col-md-4">
-    <label for="user-input" id="min-num-label" class="col-3 col-form-label">Enter your own values to be sorted</label>
-  <select>
-  <option value="" disabled selected> Please choose an option </option>
-  <option value="num">Numbers (Int and Double)</option>
-  <option value="string">Strings</option>
+	<form>
+    <label for="user-input" id="min-num-label" class="col-4 col-form-label">Enter your own values to be sorted</label>
+	<select>
+		<option value="" disabled selected> Please choose an option </option>
+		<option value="num">Numbers (Int and Double)</option>
+		<option value="string">Strings</option>
 	</select>
-   <input class="form-control" type="text" placeholder="Please enter some data to be sorted" id="user-input" autofocus>
+   <input class="form-control" type="text" placeholder="Please enter some data to be sorted" disabled = "true" id="user-input" autofocus>
+   </form>
    </div>
-   
+   <div class="col-md-4">
+    <label for="num-gen-input" id="num-gen-label" class="col-4 col-form-label">Generate Random Integers</label>
+	<input class="form-control" type="num" placeholder="How many unique integers do you want to generate?" id="num-gen-input">
+  </div>
+  <div class="col-md-4">
+  <button type="button" class="btn btn-primary" id="gen-num-button" style="margin-top:15px;height:45px;width:180px;font-size:1px;" onclick="genValues() ">Generate Numbers</button>
   </div>
  </div>
 </div>
