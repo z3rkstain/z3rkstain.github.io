@@ -17,7 +17,7 @@
   <!-- Importing my own CSS and JS Files -->
 	<link rel="stylesheet" href="../main.css">
 	<script type="text/javascript" src="../main.js"></script>
-	<script type="text/javascript" src="num_guessing_game.js"></script>
+	<script type="text/javascript" src="various.js"></script>
 </head>
 
 <body>
@@ -51,38 +51,25 @@
 
 <div class="container">
  <div class="row">
-  <div class="col-md-4">
-  <label for="miv-value-input" id="min-num-label" class="col-3 col-form-label">Minimum Number</label>
-   <input class="form-control" type="number" placeholder="Please enter a starting value (0-10k)"min="0" step="1" max="10000" id="min-value-input" autofocus>
+  <center><h3><b>Character Comparison</b></h3> </center>
+  <div class="col-md-5">
+  <label for="miv-value-input" id="min-num-label" class="col-3 col-form-label">First Word</label>
+   <input class="form-control" type="text" placeholder="Please enter your first word" id="first-word-input" autofocus>
    </div>
    
-  <div class="col-md-4">
-  <label for="max-value-input" id="max-num-label" class="col-3 col-form-label">Maximum Number</label>
-   <input class="form-control" type="number" placeholder="Please enter an ending value (max 1 million)" max="1000000" id="max-value-input">
+  <div class="col-md-5">
+  <label for="max-value-input" id="max-num-label" class="col-3 col-form-label">Second Word</label>
+   <input class="form-control" type="text" placeholder="Please enter your second word" id="second-word-input">
    </div>
    
-   <div class="col-md-4">
-  <label for="guess-value-input" id="guess-amt-label" class="col-3 col-form-label">Amount of Guesses</label>
-   <input class="form-control" type="number" placeholder="Please enter amount of guesses (1-20)"min="1" max="20" id="guess-value-input">
-   </div>
-   </div>
-   <div class="row" style="margin-top:50px;">
-    <div class="col-md-2">
-     <button type="button" class="btn btn-primary" id="start-game-button" style="margin-top:15px;height:45px;width:120px;font-size:16px;" onclick="getValues() ">Start Game</button>
+   <div class="col-md-2">
+     <button type="button" id="compare-words-button" class="btn btn-primary" style="margin-top:15px;height:45px;width:160px;font-size:16px;" onclick="compareWords() ">Compare Words</button>
 	</div>
-	<div class="col-md-4">
-	 <label for="guess-input" id="guess-label" class="col-3 col-form-label" >Enter your guess here</label>
-	 <input class="form-control" type="number" id="guess-input" disabled="disabled">
-	 </div>
-	 <div class="col-md-2">
-     <button type="button" id="check-guess-button" class="btn btn-primary" style="margin-top:15px;height:45px;width:120px;font-size:16px;" disabled="disabled" onclick="checkGuess() ">Check Guess</button>
-	</div>
-	<div class="col-md-4">
-	 <div class="alert alert-info" id="guessDisplay" style="margin-top:15px"role="alert">
-	<strong> Your guess will be compared here </strong>
-	</div>
+	
    </div>
-   </div>
+  <div class="row">
+   <center><h3><b>Number of positions that have identical characters: </b></h3><h3 id="character-display"></h3> </center>
+  </div>
    </div>
    
   <!--  Footer Start -->
