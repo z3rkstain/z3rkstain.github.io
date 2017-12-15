@@ -3,6 +3,10 @@
 <head>
 	<title>Michael's Website</title>
 	
+	 <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
 	<!-- Importing Bootstrap/Jquery -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,11 +16,11 @@
   
   <!-- Importing my own CSS and JS Files -->
 	<link rel="stylesheet" href="../main.css">
-	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="misc.js"></script>
 </head>
 
 <body>
-  <!--Navbar Start-->
+   <!--Navbar Start-->
       <div class="navbar-wrapper">
         <div class="container">
           <nav class="navbar navbar-default navbar-static-top">
@@ -30,7 +34,7 @@
                 </button>
               </div>
               <div id="navbar" class="navbar-collapse collapse">
-			  <center>
+                <center>
                 <ul class="nav navbar-nav">  
 				  <li><a class="nav-link" href="/"><strong>Home</strong></a></li>
                   <li><a class="nav-link" href="../Programming_1-2/assignments.html"><strong>Programming 1-2 Classworks</strong></a></li>
@@ -45,17 +49,28 @@
 <!--Navbar End-->
 
 <div class="container">
-<div class="row">
- <div class="col-md-4">
-   <center><a href="misc.html">  <img class="img-circle" src="../images/icons/sorting.png" alt="sorting classwork" width="100px" height="100px"></a>
-      <div class="caption">
-        <h4><strong>Misc Classworks</strong></h4>
-	  </div>
-  </div>
- </div>
-</div>
-</div>
+ <div class="row">
+  <center><h3><b>Character Comparison</b></h3> </center>
+  <div class="col-md-5">
+  <label for="miv-value-input" id="min-num-label" class="col-3 col-form-label">First Word</label>
+   <input class="form-control" type="text" placeholder="Please enter your first word" id="first-word-input" autofocus>
+   </div>
+   
+  <div class="col-md-5">
+  <label for="max-value-input" id="max-num-label" class="col-3 col-form-label">Second Word</label>
+   <input class="form-control" type="text" placeholder="Please enter your second word" id="second-word-input">
+   </div>
+   
+   <div class="col-md-2">
+     <button type="button" id="compare-words-button" class="btn btn-primary" style="margin-top:15px;height:45px;width:160px;font-size:16px;" onclick="compareWords() ">Compare Words</button>
+	</div>
 	
+   </div>
+  <div class="row">
+   <center><h3><b>Number of positions that have identical characters: </b></h3><h3 id="character-display"></h3> </center>
+  </div>
+   </div>
+   
   <!--  Footer Start -->
   <footer>
 	<div class="container">
